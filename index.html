@@ -313,8 +313,23 @@
         padding: 18px;
       }
 
+      .category__head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 56px 24px;
+        gap: 12px;
+      }
+
+      h2 {
+        min-width: 0;
+      }
+
+      .count {
+        justify-self: center;
+      }
+
       .chevron {
         display: block;
+        justify-self: end;
       }
 
       .items {
@@ -393,14 +408,14 @@
         <summary>
           <div class="category__head">
             <h2>Yemekler</h2>
-            <span class="count" aria-label="7 ürün">8</span>
+            <span class="count" aria-label="8 ürün">8</span>
             <span class="chevron" aria-hidden="true"></span>
           </div>
         </summary>
         <ul class="items">
-          <li>Kokoreç</li>
           <li>Köfte Ekmek</li>
           <li>Sucuk Ekmek</li>
+          <li>Kokoreç</li>
           <li>Mantarlı Gözleme</li>
           <li>Kaşarlı Gözleme</li>
           <li>Ispanaklı Gözleme</li>
